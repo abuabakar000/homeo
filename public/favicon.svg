@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="64" height="64" rx="16" fill="url(#brandGradient)" />
+  
+  <!-- Subtle Inner Ring -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#a7f3d0" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Medical Cross Element -->
+  <g filter="url(#shadow)">
+    <!-- Vertical Bar -->
+    <rect x="26" y="14" width="12" height="36" rx="4" fill="#ffffff" />
+    <!-- Horizontal Bar -->
+    <rect x="14" y="26" width="36" height="12" rx="4" fill="#ffffff" />
+  </g>
+
+  <!-- Natural Homeopathic Leaf Emblem -->
+  <path d="M32 16 C38 18, 46 25, 45 35 C44 42, 38 46, 32 46 C26 46, 20 42, 19 35 C18 25, 26 18, 32 16 Z" 
+        fill="url(#leafGradient)" 
+        opacity="0.9" />
+  
+  <!-- Leaf Center Stem / Heartbeat -->
+  <path d="M32 20 L32 42" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <path d="M26 31 L32 27 L38 31" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8" />
+</svg>
